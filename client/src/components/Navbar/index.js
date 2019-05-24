@@ -82,6 +82,14 @@ class Navbar extends Component {
     <li className="nav-item">
       <Link
         to="/workout"
+        className={window.location.pathname === "/workout" ? "nav-link active" : "nav-link"}
+      >
+        workout
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link
+        to="#"
         className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
       >
         workout
@@ -128,20 +136,36 @@ class Navbar extends Component {
         home
       </Link>
     </li>
-    <li className="nav-item">
+    {/* <li className="nav-item">
       <Link
         to="/discover"
         className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}
       >
         about
       </Link>
-    </li>
+    </li> */}
     <li className="nav-item">
       <Link
         to="/workout"
         className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
       >
         workout
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link
+        to="/signup"
+        className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+      >
+        sign in
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link
+        to="/login"
+        className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+      >
+        log in
       </Link>
     </li>
   </ul>

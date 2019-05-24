@@ -3,7 +3,7 @@ body,
 header,
 .view {
   height: 100%;
-color: aliceblue
+color: rgb(38, 79, 114);
 }
 .navigation{
   height: 100%;
@@ -17,4 +17,5 @@ color: aliceblue
   background-repeat: no-repeat;
   background-size: cover;
   height: 750px;
+  color: azure;
   }
